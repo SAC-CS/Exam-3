@@ -13,7 +13,8 @@ public class Dice {
 		// Constructor
 		public Dice(int dice, String userGuess, int highOrLow ) 
 		{
-
+// As is, this constructor can only handle 3 dice.  Since you have the number of dice, the 6/12/18 below should just be dice*6,
+// then you can handle any number of dices, rigght?
 			switch (dice)
 			{
 			case 1: diceTotal = 1 + (int) (Math.random() * 6); break;
